@@ -1,0 +1,59 @@
+{
+	"name": "corvette",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"check:formatting": "prettier . --check",
+		"check:styles": "stylelint \"layers/**/*.{vue,css}\"",
+		"check:scripts": "oxlint && eslint",
+		"check:types": "nuxt typecheck"
+	},
+	"dependencies": {
+		"@nuxt/devtools": "2.6.2",
+		"@nuxt/eslint": "1.7.1",
+		"@nuxt/fonts": "0.11.4",
+		"@nuxt/image": "1.11.0",
+		"@nuxt/test-utils": "3.19.2",
+		"eslint": "^9.39.2",
+		"nuxt": "^4.2.2",
+		"vite": "npm:rolldown-vite@^7.3.0",
+		"vue": "^3.5.26",
+		"vue-router": "^4.6.4"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^20.2.0",
+		"@commitlint/config-conventional": "^20.2.0",
+		"@commitlint/types": "^20.2.0",
+		"@vue/eslint-config-prettier": "^10.2.0",
+		"@vue/eslint-config-typescript": "^14.6.0",
+		"eslint-import-resolver-typescript": "^4.4.4",
+		"eslint-plugin-import-x": "^4.16.1",
+		"eslint-plugin-oxlint": "^1.35.0",
+		"eslint-plugin-perfectionist": "^4.15.1",
+		"eslint-plugin-unicorn": "^60.0.0",
+		"eslint-plugin-vue": "^10.6.2",
+		"lefthook": "^2.0.13",
+		"oxfmt": "^0.20.0",
+		"oxlint": "^1.35.0",
+		"prettier": "^3.7.4",
+		"stylelint": "^16.26.1",
+		"stylelint-config-clean-order": "^7.0.0",
+		"stylelint-config-recommended": "^17.0.0",
+		"stylelint-config-standard-vue": "^1.0.0",
+		"stylelint-plugin-logical-css": "^1.2.3",
+		"unplugin-vue-router": "^0.19.1"
+	},
+	"pnpm": {
+		"overrides": {
+			"vite": "npm:rolldown-vite@latest"
+		},
+		"onlyBuiltDependencies": [
+			"lefthook"
+		]
+	}
+}

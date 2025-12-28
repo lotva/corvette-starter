@@ -1,0 +1,75 @@
+a {
+	padding-block: 0.1em 0.3em;
+	text-decoration-skip-ink: none;
+
+	@media (hover: hover) and (pointer: fine) {
+		&[href*='://'] {
+			cursor: alias;
+		}
+	}
+
+	&:focus-visible {
+		outline-color: transparent;
+		outline-style: solid;
+	}
+}
+
+button {
+	user-select: none;
+
+	padding: 0;
+	border: none;
+
+	font: inherit;
+
+	background-color: transparent;
+}
+
+h1,
+h2,
+h3 {
+	margin-block: 0;
+}
+
+p,
+pre {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img,
+video,
+iframe {
+	display: block;
+	max-inline-size: 100%;
+	block-size: auto;
+}
+
+img {
+	image-rendering: smooth;
+}
+
+iframe {
+	border: 0;
+}
+
+blockquote {
+	margin: 0;
+}
+
+input {
+	border: none;
+	font: inherit;
+	background-color: transparent;
+}
+
+.capitals {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
