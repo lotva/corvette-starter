@@ -1,0 +1,27 @@
+html {
+	font-family: var(--font-family);
+	font-size: var(--font-size-clamp);
+	color: var(--color);
+	background-color: var(--background-color);
+}
+
+a {
+	color: var(--color__accent);
+	text-decoration-color: var(--color__accent-border);
+	text-decoration-line: var(--decoration-line);
+	text-decoration-thickness: var(--decoration-thickness);
+	text-underline-offset: var(--underline-offset);
+
+	&:focus-visible {
+		--decoration-thickness: var(--outline-thickness);
+	}
+}
+
+strong,
+h1,
+h2,
+h3 {
+	--color__accent: var(--strong);
+
+	color: var(--strong);
+}
