@@ -1,75 +1,48 @@
-# Nuxt Minimal Starter
+# Воспроизводимый стартер для Накст-приложений
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Добавляет типизированные Layers и быстрый линтинг при коммите и CI, отключает автоимпорты, настраивает тесты в браузере и рантайме.
 
-## Setup
+## Команды для разработки
 
-Make sure to install dependencies:
+Запустить дев-сервер:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+Собрать и развернуть локально билд:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm preview
 ```
 
-Locally preview production build:
+Обновить зависимости:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+pnpm dlx npm-check-updates
+pnpm install
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Запустить тесты:
+
+```bash
+pnpm run test:runtime
+
+pnpm exec playwright install chromium chromium-headless-shell
+pnpm run test:browser
+pnpm run test:e2e
+```
+
+## Стек
+
+| Категория | Технологии                                      |
+| --------- | ----------------------------------------------- |
+| Фреймворк | Nuxt 4, Vue 3, TypeScript                       |
+| Линтеры   | Prettier, Stylelint, ESLint, Oxlint, Commitlint |
+| Тулинг    | PNPM, Rolldown, Lefthook                        |
+
+## Файловая структура
+
+**Архитектурная методология — FEOD.** Код поделён на слои, каждый слой — на директории `modules`, `pages`, `views` и `common`. Прочитайте, чтобы работать с самой удобной организацией кода во фронтенде: [документация FEOD](https://habr.com/ru/companies/sportmaster_lab/articles/972410/), [документация Nuxt Layers](https://nuxt.com/docs/4.x/getting-started/layers).
