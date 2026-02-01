@@ -1,5 +1,5 @@
 a {
-	padding-block: 0.1em 0.3em;
+	padding-block: 0.1em 0.2em;
 	text-decoration-skip-ink: none;
 
 	@media (hover: hover) and (pointer: fine) {
@@ -14,26 +14,22 @@ a {
 	}
 }
 
-button {
-	user-select: none;
-
-	padding: 0;
-	border: none;
-
-	font: inherit;
-
-	background-color: transparent;
-}
-
 h1,
 h2,
 h3 {
 	margin-block: 0;
+	text-wrap: balance;
+	overflow-wrap: break-word;
 }
 
-p,
-pre {
+pre,
+p {
 	margin: 0;
+}
+
+p {
+	text-wrap: pretty;
+	overflow-wrap: break-word;
 }
 
 ul,
@@ -43,6 +39,7 @@ ol {
 	list-style: none;
 }
 
+picture,
 img,
 video,
 iframe {
@@ -63,9 +60,23 @@ blockquote {
 	margin: 0;
 }
 
-input {
-	border: none;
+button,
+select,
+input,
+textarea {
 	font: inherit;
+}
+
+button {
+	user-select: none;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+input,
+textarea {
+	border: none;
 	background-color: transparent;
 }
 

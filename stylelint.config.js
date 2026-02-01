@@ -15,6 +15,8 @@ export default {
 			},
 		],
 
+		'color-function-notation': 'modern',
+
 		'declaration-property-value-no-unknown': null,
 
 		'no-descending-specificity': [true, { severity: 'warning' }],
