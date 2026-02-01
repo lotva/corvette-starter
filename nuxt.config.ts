@@ -23,12 +23,7 @@ export default defineNuxtConfig({
 		scan: false,
 	},
 
-	modules: [
-		'@nuxt/eslint',
-		'@nuxt/test-utils',
-		'@nuxt/image',
-		'@nuxt/devtools',
-	],
+	modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/devtools'],
 
 	typescript: {
 		tsConfig: {
