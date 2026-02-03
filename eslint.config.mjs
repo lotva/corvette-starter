@@ -47,6 +47,7 @@ export default withNuxt(
 					'warn',
 					{
 						replacements: {
+							e: false,
 							props: false,
 							ref: false,
 						},

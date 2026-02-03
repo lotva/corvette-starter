@@ -1,13 +1,9 @@
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
 
-	css: ['~~/layers/base/app/core/assets/styles/index.css'],
+	css: ['~~/layers/base/app/assets/styles/index.css'],
 
 	devtools: { enabled: true },
-
-	dir: {
-		assets: './layers/base/app/core/assets',
-	},
 
 	eslint: {
 		config: {
@@ -23,7 +19,12 @@ export default defineNuxtConfig({
 		scan: false,
 	},
 
-	modules: ['@nuxt/eslint', '@nuxt/image', '@nuxt/devtools'],
+	modules: [
+		'@nuxt/eslint',
+		'@nuxt/image',
+		'@nuxt/test-utils',
+		'@nuxt/devtools',
+	],
 
 	typescript: {
 		tsConfig: {

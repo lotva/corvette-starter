@@ -1,11 +1,7 @@
 <template>
-	<div>
-		<SampleComponent />
-
-		<NuxtLink to="/sample-page">Sample Page</NuxtLink>
-	</div>
+	<IndexPage />
 </template>
 
 <script setup lang="ts">
-	import SampleComponent from '../common/ui/SampleComponent.vue'
+	import IndexPage from '../views/index/IndexPage.vue'
 </script>
